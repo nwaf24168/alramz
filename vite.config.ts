@@ -20,4 +20,13 @@ export default defineConfig(({ mode }) => ({
     },
   },
   base: '/alramz_2025/',
+  build: {
+    outDir: 'dist',
+    assetsDir: 'assets',
+    rollupOptions: {
+      output: {
+        manualChunks: undefined,
+      },
+    },
+  },
 }));
